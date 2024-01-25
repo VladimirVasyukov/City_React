@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 117px;
+  background: #f2f5fa;
+}
+
+.content {
+  max-width: 1440px;
+  padding: 0 18px 0 60px;
+  margin: 0 auto;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #434652;
+  font-size: 14px;
+  height: 100%;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  background: #ffffff;
+  border: 1px solid#C4C7D1;
+}
+
+.btnPrimary {
+  width: 67px;
+  height: 36px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #434652;
+}
+
+.btnBack {
+  display: flex;
+  width: 97px;
+  height: 36px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #434652;
+  background-color: #ffffff;
+  border: 1px solid #c4c7d1;
+}
+
+.btnBack::before {
+  content: "";
+  position: relative;
+  left: -6px;
+  width: 15px;
+  height: 15px;
+  background: url(./assets/Vector.svg) 0 / 100% no-repeat;
+}
+
+.btnCreate {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 36px;
+  border-radius: 4px;
+  margin: 31px 25px 0 0;
+  padding: 0px, 20px, 0px, 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ffffff;
+  background: #21a5b9;
+}
+
+li {
+  list-style: none;
+}
+
+.citiesWrapper {
+  padding-top: 122px;
+}
+
+.footer {
+  height: 117px;
+}
